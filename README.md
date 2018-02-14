@@ -42,8 +42,9 @@ python 3
 ```
 * Reduce:
 ```
-  KEY: block number  VALUE: numbers in this block
-  finish matrix multiplication of the blocks locally
+  KEY: block num
+  VALUE: [(row, col, value),...,(...)]//numbers in the block
+  implement matrix multiplication of the blocks locally
 ```
 
 
