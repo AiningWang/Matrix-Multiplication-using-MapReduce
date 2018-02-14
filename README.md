@@ -42,9 +42,15 @@ python 3
 ```
 * Reduce:
 ```
-  KEY: block num
+  KEY: block num (a_block, b_block)
   VALUE: [(row, col, value),...,(...)]//numbers in the block
-  implement matrix multiplication of the blocks locally
+
+  // implement matrix multiplication of the blocks locally
+  res = 0
+  for i = row of ele in this a block:
+    for k = col of ele in this b block:
+      for j = 0 to n-1:
+        res += A[i][j] * B[j][k]
 ```
 
 
