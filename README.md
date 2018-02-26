@@ -1,7 +1,7 @@
 # Matrix-Multiplication-using-MapReduce
 
 ## Purpose
-using naive algorithm and advanced algorithm to implement matrix multiplication
+The purpose of this program is using naive algorithm and advanced algorithm to implement matrix multiplication.
 
 ## Language
 python 3
@@ -10,7 +10,7 @@ python 3
 * Input:
   * matrix A: m * n,   index(i,j)
   * matrix B: n * p,  index(j,k)
-  * **format**: matrix, row, col, value
+  * **format**: matrix, row, col, value (see data/test_data.txt)
 * Output:
   * result of A*B
   * **format**:(row, col), val
@@ -32,7 +32,7 @@ python 3
     res += A[i][j]*B[j][k]
 ```
 ## Smarter Algorithm
-* partition A into **a row blocks**. partition B into **b col blocks**
+* The maps label A as **a row blocks** and B as **b col blocks**
 * Map:
 ```
   k = 0 to p/b:
@@ -53,11 +53,11 @@ python 3
         res += A[i][j] * B[j][k]
 ```
 ## Test
-* to locally test naive algorithm, run test_naive.sh
+* Test naive algorithm locally
 ```
   . test_naive.sh
 ```
-* to locally test smarter algorithm, run test_smarter.sh
+* Test smarter algorithm locally
 ```
   . test_smarter.sh
 ```
