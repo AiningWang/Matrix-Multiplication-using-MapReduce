@@ -52,6 +52,24 @@ python 3
       for j = 0 to n-1:
         res += A[i][j] * B[j][k]
 ```
+## Test
+* to locally test naive algorithm, run test_naive.sh
+```
+  . test_naive.sh
+```
+* to locally test smarter algorithm, run test_smarter.sh
+```
+  . test_smarter.sh
+```
+* The output should be:
+```
+  (0, 0), 90.000000
+  (0, 1), 100.000000
+  (0, 2), 110.000000
+  (1, 0), 240.000000
+  (1, 1), 275.000000
+  (1, 2), 310.000000
+```
 
 
 
